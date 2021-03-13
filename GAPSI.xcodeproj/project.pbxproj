@@ -31,6 +31,8 @@
 		C39ABB9325FD617500B45197 /* ProductSearched.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9225FD617500B45197 /* ProductSearched.swift */; };
 		C39ABB9725FD629900B45197 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9625FD629900B45197 /* ProductCell.swift */; };
 		C39ABB9B25FD638200B45197 /* GAPSIProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9A25FD638200B45197 /* GAPSIProductImageView.swift */; };
+		C39ABB9E25FD676200B45197 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9D25FD676200B45197 /* PersistenceManager.swift */; };
+		C39ABBA125FD69F400B45197 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABBA025FD69F400B45197 /* HistoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		C39ABB9225FD617500B45197 /* ProductSearched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearched.swift; sourceTree = "<group>"; };
 		C39ABB9625FD629900B45197 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		C39ABB9A25FD638200B45197 /* GAPSIProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIProductImageView.swift; sourceTree = "<group>"; };
+		C39ABB9D25FD676200B45197 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		C39ABBA025FD69F400B45197 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				C39ABB7925FD4F9800B45197 /* NetworkManager.swift */,
+				C39ABB9D25FD676200B45197 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				C39ABB9625FD629900B45197 /* ProductCell.swift */,
+				C39ABBA025FD69F400B45197 /* HistoryCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -252,11 +258,13 @@
 				C39ABB3825FD3A4200B45197 /* AppDelegate.swift in Sources */,
 				C39ABB8625FD536500B45197 /* GAPSIProductListVC.swift in Sources */,
 				C39ABB5625FD3EFC00B45197 /* GAPSISearchVC.swift in Sources */,
+				C39ABBA125FD69F400B45197 /* HistoryCell.swift in Sources */,
 				C39ABB5A25FD3F4F00B45197 /* GAPSITextField.swift in Sources */,
 				C39ABB6925FD43CB00B45197 /* GAPSIAlertVC.swift in Sources */,
 				C39ABB8925FD584800B45197 /* SearchResponse.swift in Sources */,
 				C39ABB7225FD45E700B45197 /* GAPSIBodyLabel.swift in Sources */,
 				C39ABB8C25FD5B5A00B45197 /* GAPSILoadingVC.swift in Sources */,
+				C39ABB9E25FD676200B45197 /* PersistenceManager.swift in Sources */,
 				C39ABB9B25FD638200B45197 /* GAPSIProductImageView.swift in Sources */,
 				C39ABB6225FD428400B45197 /* Constants.swift in Sources */,
 				C39ABB9725FD629900B45197 /* ProductCell.swift in Sources */,

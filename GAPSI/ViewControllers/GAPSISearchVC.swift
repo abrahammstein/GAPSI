@@ -49,8 +49,10 @@ class GAPSISearchVC: UIViewController {
         }
         
         searchTextField.resignFirstResponder()
-        
-
+        // If everything is okay we present the GAPSIProductListVC
+        let productListVC = GAPSIProductListVC()
+        productListVC.product = searchTextField.text!
+        navigationController?.pushViewController(productListVC, animated: true)
     }
     
     // Configure NSLayoutConstraint for logoImageView

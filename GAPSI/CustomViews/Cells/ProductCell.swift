@@ -28,7 +28,7 @@ class ProductCell: UICollectionViewCell {
     func set(product: Product) {
         productImageView.downloadImage(fromURL: product.image)
         productNameLabel.text = product.title
-        priceLabel.text       = "$\(product.price)"
+        priceLabel.text       = String(format: "$%.02f", product.price)
     }
     
     // This method will configure our ProductCell

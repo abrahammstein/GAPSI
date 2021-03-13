@@ -59,7 +59,7 @@ class NetworkManager {
         task.resume()
     }
     
-    // Method that will download the Image of the Product
+    // Method that will download the Image of the Product when using the class GAPSIProductImageView
     func downloadImage(from urlString: String, completed: @escaping (UIImage?) -> Void) {
         let cacheKey = NSString(string: urlString)
         

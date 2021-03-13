@@ -7,31 +7,33 @@
 
 import UIKit
 
+
+/* This GAPSISearchHistoryListVC is being displayed the traditional way (No DiffableSource)
+   to demonstrate knowledge in the previous way of doing it.
+   The DiffableDataSource was implemented in the class GAPSIProductListVC if you want to check that.
+ */
+
 class GAPSISearchHistoryListVC: UIViewController {
 
     let tableView                     = UITableView()
     var products: [ProductSearched]   = []
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
         configureTableView()
     }
     
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         getProductSearchHistory()
     }
-    
     
     func configureViewController() {
         view.backgroundColor    = .systemBackground
         title                   = "Search History"
         navigationController?.navigationBar.prefersLargeTitles = true
     }
-    
     
     func configureTableView() {
         view.addSubview(tableView)
@@ -40,11 +42,10 @@ class GAPSISearchHistoryListVC: UIViewController {
         tableView.rowHeight     = 80
         tableView.delegate      = self
         tableView.dataSource    = self
-        
         tableView.register(HistoryCell.self, forCellReuseIdentifier: HistoryCell.reuseID)
     }
     
-    
+    // This method will retrieve from the PersistenceManager a list of ProductSearched object.
     func getProductSearchHistory() {
         PersistenceManager.retrieveSearchHistory { [weak self] result in
             guard let self = self else { return }
@@ -73,7 +74,7 @@ class GAPSISearchHistoryListVC: UIViewController {
     }
 }
 
-
+// Old way of doing UITableViewDataSource, if you wanna see the new DiffableDataSource please check GAPSIProductListVC
 extension GAPSISearchHistoryListVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		C39ABB3825FD3A4200B45197 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB3725FD3A4200B45197 /* AppDelegate.swift */; };
 		C39ABB3A25FD3A4200B45197 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB3925FD3A4200B45197 /* SceneDelegate.swift */; };
-		C39ABB3C25FD3A4200B45197 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB3B25FD3A4200B45197 /* ViewController.swift */; };
-		C39ABB3F25FD3A4200B45197 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39ABB3D25FD3A4200B45197 /* Main.storyboard */; };
 		C39ABB4125FD3A4400B45197 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C39ABB4025FD3A4400B45197 /* Assets.xcassets */; };
 		C39ABB4425FD3A4400B45197 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C39ABB4225FD3A4400B45197 /* LaunchScreen.storyboard */; };
+		C39ABB5225FD3E3E00B45197 /* GAPSITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB5125FD3E3E00B45197 /* GAPSITabBarController.swift */; };
+		C39ABB5625FD3EFC00B45197 /* GAPSISearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB5525FD3EFC00B45197 /* GAPSISearchVC.swift */; };
+		C39ABB5A25FD3F4F00B45197 /* GAPSITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB5925FD3F4F00B45197 /* GAPSITextField.swift */; };
+		C39ABB5E25FD3F6A00B45197 /* GAPSIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB5D25FD3F6A00B45197 /* GAPSIButton.swift */; };
+		C39ABB6225FD428400B45197 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB6125FD428400B45197 /* Constants.swift */; };
+		C39ABB6625FD432F00B45197 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB6525FD432F00B45197 /* UIViewController+Ext.swift */; };
+		C39ABB6925FD43CB00B45197 /* GAPSIAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB6825FD43CB00B45197 /* GAPSIAlertVC.swift */; };
+		C39ABB6C25FD44D200B45197 /* GAPSIAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB6B25FD44D200B45197 /* GAPSIAlertContainerView.swift */; };
+		C39ABB6F25FD459C00B45197 /* GAPSITitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB6E25FD459C00B45197 /* GAPSITitleLabel.swift */; };
+		C39ABB7225FD45E700B45197 /* GAPSIBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB7125FD45E700B45197 /* GAPSIBodyLabel.swift */; };
+		C39ABB7525FD478D00B45197 /* GAPSISearchHistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB7425FD478D00B45197 /* GAPSISearchHistoryListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C39ABB3425FD3A4200B45197 /* GAPSI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAPSI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C39ABB3725FD3A4200B45197 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C39ABB3925FD3A4200B45197 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C39ABB3B25FD3A4200B45197 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C39ABB3E25FD3A4200B45197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C39ABB4025FD3A4400B45197 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C39ABB4325FD3A4400B45197 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C39ABB4525FD3A4400B45197 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C39ABB5125FD3E3E00B45197 /* GAPSITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSITabBarController.swift; sourceTree = "<group>"; };
+		C39ABB5525FD3EFC00B45197 /* GAPSISearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSISearchVC.swift; sourceTree = "<group>"; };
+		C39ABB5925FD3F4F00B45197 /* GAPSITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSITextField.swift; sourceTree = "<group>"; };
+		C39ABB5D25FD3F6A00B45197 /* GAPSIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIButton.swift; sourceTree = "<group>"; };
+		C39ABB6125FD428400B45197 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C39ABB6525FD432F00B45197 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		C39ABB6825FD43CB00B45197 /* GAPSIAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIAlertVC.swift; sourceTree = "<group>"; };
+		C39ABB6B25FD44D200B45197 /* GAPSIAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIAlertContainerView.swift; sourceTree = "<group>"; };
+		C39ABB6E25FD459C00B45197 /* GAPSITitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSITitleLabel.swift; sourceTree = "<group>"; };
+		C39ABB7125FD45E700B45197 /* GAPSIBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIBodyLabel.swift; sourceTree = "<group>"; };
+		C39ABB7425FD478D00B45197 /* GAPSISearchHistoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSISearchHistoryListVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,56 @@
 		C39ABB3625FD3A4200B45197 /* GAPSI */ = {
 			isa = PBXGroup;
 			children = (
+				C39ABB6425FD431A00B45197 /* Extensions */,
+				C39ABB6025FD427900B45197 /* Utilities */,
+				C39ABB5825FD3F2D00B45197 /* CustomViews */,
+				C39ABB5025FD3E1C00B45197 /* ViewControllers */,
 				C39ABB3725FD3A4200B45197 /* AppDelegate.swift */,
 				C39ABB3925FD3A4200B45197 /* SceneDelegate.swift */,
-				C39ABB3B25FD3A4200B45197 /* ViewController.swift */,
-				C39ABB3D25FD3A4200B45197 /* Main.storyboard */,
 				C39ABB4025FD3A4400B45197 /* Assets.xcassets */,
 				C39ABB4225FD3A4400B45197 /* LaunchScreen.storyboard */,
 				C39ABB4525FD3A4400B45197 /* Info.plist */,
 			);
 			path = GAPSI;
+			sourceTree = "<group>";
+		};
+		C39ABB5025FD3E1C00B45197 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB5125FD3E3E00B45197 /* GAPSITabBarController.swift */,
+				C39ABB5525FD3EFC00B45197 /* GAPSISearchVC.swift */,
+				C39ABB7425FD478D00B45197 /* GAPSISearchHistoryListVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C39ABB5825FD3F2D00B45197 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB5925FD3F4F00B45197 /* GAPSITextField.swift */,
+				C39ABB5D25FD3F6A00B45197 /* GAPSIButton.swift */,
+				C39ABB6825FD43CB00B45197 /* GAPSIAlertVC.swift */,
+				C39ABB6B25FD44D200B45197 /* GAPSIAlertContainerView.swift */,
+				C39ABB6E25FD459C00B45197 /* GAPSITitleLabel.swift */,
+				C39ABB7125FD45E700B45197 /* GAPSIBodyLabel.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C39ABB6025FD427900B45197 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB6125FD428400B45197 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C39ABB6425FD431A00B45197 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB6525FD432F00B45197 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +185,6 @@
 			files = (
 				C39ABB4425FD3A4400B45197 /* LaunchScreen.storyboard in Resources */,
 				C39ABB4125FD3A4400B45197 /* Assets.xcassets in Resources */,
-				C39ABB3F25FD3A4200B45197 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +195,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C39ABB3C25FD3A4200B45197 /* ViewController.swift in Sources */,
+				C39ABB7525FD478D00B45197 /* GAPSISearchHistoryListVC.swift in Sources */,
+				C39ABB5E25FD3F6A00B45197 /* GAPSIButton.swift in Sources */,
 				C39ABB3825FD3A4200B45197 /* AppDelegate.swift in Sources */,
+				C39ABB5625FD3EFC00B45197 /* GAPSISearchVC.swift in Sources */,
+				C39ABB5A25FD3F4F00B45197 /* GAPSITextField.swift in Sources */,
+				C39ABB6925FD43CB00B45197 /* GAPSIAlertVC.swift in Sources */,
+				C39ABB7225FD45E700B45197 /* GAPSIBodyLabel.swift in Sources */,
+				C39ABB6225FD428400B45197 /* Constants.swift in Sources */,
+				C39ABB6C25FD44D200B45197 /* GAPSIAlertContainerView.swift in Sources */,
+				C39ABB5225FD3E3E00B45197 /* GAPSITabBarController.swift in Sources */,
+				C39ABB6F25FD459C00B45197 /* GAPSITitleLabel.swift in Sources */,
+				C39ABB6625FD432F00B45197 /* UIViewController+Ext.swift in Sources */,
 				C39ABB3A25FD3A4200B45197 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +214,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C39ABB3D25FD3A4200B45197 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C39ABB3E25FD3A4200B45197 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		C39ABB4225FD3A4400B45197 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

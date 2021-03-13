@@ -11,6 +11,7 @@ class ProductCell: UICollectionViewCell {
     static let reuseID   = "ProductCell"
     let productImageView = GAPSIProductImageView(frame: .zero)
     let productNameLabel = GAPSITitleLabel(textAlignment: .center, fontSize: 16)
+    let priceLabel       = GAPSITitleLabel(textAlignment: .center, fontSize: 14)
     
     
     override init(frame: CGRect) {
@@ -27,12 +28,14 @@ class ProductCell: UICollectionViewCell {
     func set(product: Product) {
         productImageView.downloadImage(fromURL: product.image)
         productNameLabel.text = product.title
+        priceLabel.text       = "$\(product.price)"
     }
     
     // This method will configure our ProductCell
     private func configure() {
         addSubview(productImageView)
         addSubview(productNameLabel)
+        addSubview(priceLabel)
         let padding: CGFloat = 8
         
         NSLayoutConstraint.activate([
@@ -44,7 +47,12 @@ class ProductCell: UICollectionViewCell {
             productNameLabel.topAnchor.constraint(equalTo: productImageView.bottomAnchor, constant: 12),
             productNameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             productNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
-            productNameLabel.heightAnchor.constraint(equalToConstant: 20)
+            productNameLabel.heightAnchor.constraint(equalToConstant: 20),
+            
+            priceLabel.topAnchor.constraint(equalTo: productNameLabel.bottomAnchor, constant: 4),
+            priceLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
+            priceLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
+            priceLabel.heightAnchor.constraint(equalToConstant: 13)
         ])
     }
 }

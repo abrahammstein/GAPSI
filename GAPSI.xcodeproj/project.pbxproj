@@ -27,6 +27,10 @@
 		C39ABB8325FD514300B45197 /* GAPSIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8225FD514300B45197 /* GAPSIError.swift */; };
 		C39ABB8625FD536500B45197 /* GAPSIProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8525FD536500B45197 /* GAPSIProductListVC.swift */; };
 		C39ABB8925FD584800B45197 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8825FD584800B45197 /* SearchResponse.swift */; };
+		C39ABB8C25FD5B5A00B45197 /* GAPSILoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8B25FD5B5A00B45197 /* GAPSILoadingVC.swift */; };
+		C39ABB9325FD617500B45197 /* ProductSearched.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9225FD617500B45197 /* ProductSearched.swift */; };
+		C39ABB9725FD629900B45197 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9625FD629900B45197 /* ProductCell.swift */; };
+		C39ABB9B25FD638200B45197 /* GAPSIProductImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB9A25FD638200B45197 /* GAPSIProductImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +56,10 @@
 		C39ABB8225FD514300B45197 /* GAPSIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIError.swift; sourceTree = "<group>"; };
 		C39ABB8525FD536500B45197 /* GAPSIProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIProductListVC.swift; sourceTree = "<group>"; };
 		C39ABB8825FD584800B45197 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		C39ABB8B25FD5B5A00B45197 /* GAPSILoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSILoadingVC.swift; sourceTree = "<group>"; };
+		C39ABB9225FD617500B45197 /* ProductSearched.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearched.swift; sourceTree = "<group>"; };
+		C39ABB9625FD629900B45197 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		C39ABB9A25FD638200B45197 /* GAPSIProductImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIProductImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,12 +121,15 @@
 		C39ABB5825FD3F2D00B45197 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				C39ABB9525FD627C00B45197 /* Cells */,
 				C39ABB5925FD3F4F00B45197 /* GAPSITextField.swift */,
 				C39ABB5D25FD3F6A00B45197 /* GAPSIButton.swift */,
 				C39ABB6825FD43CB00B45197 /* GAPSIAlertVC.swift */,
 				C39ABB6B25FD44D200B45197 /* GAPSIAlertContainerView.swift */,
 				C39ABB6E25FD459C00B45197 /* GAPSITitleLabel.swift */,
 				C39ABB7125FD45E700B45197 /* GAPSIBodyLabel.swift */,
+				C39ABB8B25FD5B5A00B45197 /* GAPSILoadingVC.swift */,
+				C39ABB9A25FD638200B45197 /* GAPSIProductImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -153,8 +164,17 @@
 			children = (
 				C39ABB7E25FD508000B45197 /* Product.swift */,
 				C39ABB8825FD584800B45197 /* SearchResponse.swift */,
+				C39ABB9225FD617500B45197 /* ProductSearched.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C39ABB9525FD627C00B45197 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB9625FD629900B45197 /* ProductCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,11 +256,15 @@
 				C39ABB6925FD43CB00B45197 /* GAPSIAlertVC.swift in Sources */,
 				C39ABB8925FD584800B45197 /* SearchResponse.swift in Sources */,
 				C39ABB7225FD45E700B45197 /* GAPSIBodyLabel.swift in Sources */,
+				C39ABB8C25FD5B5A00B45197 /* GAPSILoadingVC.swift in Sources */,
+				C39ABB9B25FD638200B45197 /* GAPSIProductImageView.swift in Sources */,
 				C39ABB6225FD428400B45197 /* Constants.swift in Sources */,
+				C39ABB9725FD629900B45197 /* ProductCell.swift in Sources */,
 				C39ABB8325FD514300B45197 /* GAPSIError.swift in Sources */,
 				C39ABB6C25FD44D200B45197 /* GAPSIAlertContainerView.swift in Sources */,
 				C39ABB5225FD3E3E00B45197 /* GAPSITabBarController.swift in Sources */,
 				C39ABB7A25FD4F9900B45197 /* NetworkManager.swift in Sources */,
+				C39ABB9325FD617500B45197 /* ProductSearched.swift in Sources */,
 				C39ABB6F25FD459C00B45197 /* GAPSITitleLabel.swift in Sources */,
 				C39ABB6625FD432F00B45197 /* UIViewController+Ext.swift in Sources */,
 				C39ABB3A25FD3A4200B45197 /* SceneDelegate.swift in Sources */,

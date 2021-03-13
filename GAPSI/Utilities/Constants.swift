@@ -8,5 +8,6 @@
 import UIKit
 
 enum Images {
-    static let eCommerceLogo                   = UIImage(named: "cartLogo")
+    static let eCommerceLogo = UIImage(named: "cartLogo")
+    static let placeholder   = UIImage(named: "productPlaceholder")
 }

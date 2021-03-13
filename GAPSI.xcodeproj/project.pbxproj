@@ -22,6 +22,11 @@
 		C39ABB6F25FD459C00B45197 /* GAPSITitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB6E25FD459C00B45197 /* GAPSITitleLabel.swift */; };
 		C39ABB7225FD45E700B45197 /* GAPSIBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB7125FD45E700B45197 /* GAPSIBodyLabel.swift */; };
 		C39ABB7525FD478D00B45197 /* GAPSISearchHistoryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB7425FD478D00B45197 /* GAPSISearchHistoryListVC.swift */; };
+		C39ABB7A25FD4F9900B45197 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB7925FD4F9800B45197 /* NetworkManager.swift */; };
+		C39ABB7F25FD508000B45197 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB7E25FD508000B45197 /* Product.swift */; };
+		C39ABB8325FD514300B45197 /* GAPSIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8225FD514300B45197 /* GAPSIError.swift */; };
+		C39ABB8625FD536500B45197 /* GAPSIProductListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8525FD536500B45197 /* GAPSIProductListVC.swift */; };
+		C39ABB8925FD584800B45197 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C39ABB8825FD584800B45197 /* SearchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		C39ABB6E25FD459C00B45197 /* GAPSITitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSITitleLabel.swift; sourceTree = "<group>"; };
 		C39ABB7125FD45E700B45197 /* GAPSIBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIBodyLabel.swift; sourceTree = "<group>"; };
 		C39ABB7425FD478D00B45197 /* GAPSISearchHistoryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSISearchHistoryListVC.swift; sourceTree = "<group>"; };
+		C39ABB7925FD4F9800B45197 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		C39ABB7E25FD508000B45197 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C39ABB8225FD514300B45197 /* GAPSIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIError.swift; sourceTree = "<group>"; };
+		C39ABB8525FD536500B45197 /* GAPSIProductListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAPSIProductListVC.swift; sourceTree = "<group>"; };
+		C39ABB8825FD584800B45197 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,8 @@
 		C39ABB3625FD3A4200B45197 /* GAPSI */ = {
 			isa = PBXGroup;
 			children = (
+				C39ABB7D25FD506E00B45197 /* Model */,
+				C39ABB7825FD4F8400B45197 /* Managers */,
 				C39ABB6425FD431A00B45197 /* Extensions */,
 				C39ABB6025FD427900B45197 /* Utilities */,
 				C39ABB5825FD3F2D00B45197 /* CustomViews */,
@@ -93,6 +105,7 @@
 				C39ABB5125FD3E3E00B45197 /* GAPSITabBarController.swift */,
 				C39ABB5525FD3EFC00B45197 /* GAPSISearchVC.swift */,
 				C39ABB7425FD478D00B45197 /* GAPSISearchHistoryListVC.swift */,
+				C39ABB8525FD536500B45197 /* GAPSIProductListVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -114,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C39ABB6125FD428400B45197 /* Constants.swift */,
+				C39ABB8225FD514300B45197 /* GAPSIError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -124,6 +138,23 @@
 				C39ABB6525FD432F00B45197 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C39ABB7825FD4F8400B45197 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB7925FD4F9800B45197 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C39ABB7D25FD506E00B45197 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C39ABB7E25FD508000B45197 /* Product.swift */,
+				C39ABB8825FD584800B45197 /* SearchResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,14 +228,19 @@
 			files = (
 				C39ABB7525FD478D00B45197 /* GAPSISearchHistoryListVC.swift in Sources */,
 				C39ABB5E25FD3F6A00B45197 /* GAPSIButton.swift in Sources */,
+				C39ABB7F25FD508000B45197 /* Product.swift in Sources */,
 				C39ABB3825FD3A4200B45197 /* AppDelegate.swift in Sources */,
+				C39ABB8625FD536500B45197 /* GAPSIProductListVC.swift in Sources */,
 				C39ABB5625FD3EFC00B45197 /* GAPSISearchVC.swift in Sources */,
 				C39ABB5A25FD3F4F00B45197 /* GAPSITextField.swift in Sources */,
 				C39ABB6925FD43CB00B45197 /* GAPSIAlertVC.swift in Sources */,
+				C39ABB8925FD584800B45197 /* SearchResponse.swift in Sources */,
 				C39ABB7225FD45E700B45197 /* GAPSIBodyLabel.swift in Sources */,
 				C39ABB6225FD428400B45197 /* Constants.swift in Sources */,
+				C39ABB8325FD514300B45197 /* GAPSIError.swift in Sources */,
 				C39ABB6C25FD44D200B45197 /* GAPSIAlertContainerView.swift in Sources */,
 				C39ABB5225FD3E3E00B45197 /* GAPSITabBarController.swift in Sources */,
+				C39ABB7A25FD4F9900B45197 /* NetworkManager.swift in Sources */,
 				C39ABB6F25FD459C00B45197 /* GAPSITitleLabel.swift in Sources */,
 				C39ABB6625FD432F00B45197 /* UIViewController+Ext.swift in Sources */,
 				C39ABB3A25FD3A4200B45197 /* SceneDelegate.swift in Sources */,

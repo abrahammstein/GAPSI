@@ -50,8 +50,7 @@ class GAPSISearchVC: UIViewController {
         
         searchTextField.resignFirstResponder()
         // If everything is okay we present the GAPSIProductListVC
-        let productListVC = GAPSIProductListVC()
-        productListVC.product = searchTextField.text!
+        let productListVC = GAPSIProductListVC(product: searchTextField.text!)
         navigationController?.pushViewController(productListVC, animated: true)
     }
     
